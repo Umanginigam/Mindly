@@ -1,71 +1,71 @@
-# Getting Started with Create React App
+###Mindly - AI-powered Mental Health Support###
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mindly is a website designed to support mental well-being by providing users with a chatbot that responds according to emotional detection, offering diagnosis tests, and a variety of resources for mental health care. The platform uses cutting-edge AI technologies to enhance the mental health support experience.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Emotion Detection: The chatbot uses emotion detection powered by DistilRoBERTa to understand user emotions and provide appropriate responses.
+Diagnosis Test: Users can take mental health diagnosis tests to better understand their emotional and psychological well-being.
+Resources for Mental Health: A library of resources is available, offering guidance and support for mental health issues.
+Real-time Chatbot: A conversational interface that adapts its responses based on the user’s emotional state.
+Tech Stack
 
-### `npm start`
+Frontend:
+React: For building a responsive and interactive user interface.
+Backend:
+Flask: To handle server-side logic and API endpoints.
+AI Models:
+DistilRoBERTa: For emotion detection in user input.
+Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the repository:
+git clone https://github.com/your-username/mindly.git
+Frontend Setup (React):
+Navigate to the frontend directory:
+cd frontend
+Install dependencies:
+npm install
+Run the development server:
+npm start
+Backend Setup (Flask):
+Navigate to the backend directory:
+cd backend
+Set up a virtual environment (optional but recommended):
+python3 -m venv venv
+source venv/bin/activate 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install dependencies:
+pip install -r requirements.txt
+Run the Flask server:
+python app.py
 
-### `npm test`
+Dependencies:
+Flask: For backend development.
+transformers: For integrating the DistilRoBERTa model.
+react: For the frontend user interface.
+other necessary libraries: Listed in requirements.txt for the backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contributing
 
-### `npm run build`
+We welcome contributions to Mindly! To contribute:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Fork this repository.
+Create a new branch (git checkout -b feature-name).
+Make your changes.
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature-name).
+Open a pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Team
+Tushar Swanskar – GitHub Profile
+Rudra Pratap Tomer – GitHub Profile
+License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### `npm run eject`
+Acknowledgments
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+DistilRoBERTa for emotion detection.
+Flask for backend development.
+React for frontend development.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Mindly
