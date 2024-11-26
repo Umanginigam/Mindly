@@ -4,7 +4,9 @@ Mindly is a website designed to support mental well-being by providing users wit
 
 ## **Features**
 
-Emotion Detection: The chatbot uses emotion detection powered by DistilRoBERTa to understand user emotions and provide appropriate responses.
+Emotion Detection: The chatbot uses emotion detection powered by DistilRoBERTa to understand user emotions.
+
+Response: The Gpt2 model is used to respond.
 
 Diagnosis Test: Users can take mental health diagnosis tests to better understand their emotional and psychological well-being.
 
@@ -97,6 +99,8 @@ Rudra Pratap Tomer
 ## **Acknowledgments**
 
 DistilRoBERTa for emotion detection.
+
+GPT2 model for response.
 
 Flask for backend development.
 
