@@ -12,7 +12,7 @@ Resources for Mental Health: A library of resources is available, offering guida
 
 Real-time Chatbot: A conversational interface that adapts its responses based on the user’s emotional state.
 
-## **Tech Stack
+## **Tech Stack**
 
 Frontend:
 React: For building a responsive and interactive user interface.
@@ -23,7 +23,7 @@ Flask: To handle server-side logic and API endpoints.
 AI Models:
 DistilRoBERTa: For emotion detection in user input.
 
-## **Installation
+## **Installation**
 
 Clone the repository:
 git clone https://github.com/your-username/mindly.git
@@ -61,7 +61,7 @@ Run the Flask server:
 
 python app.py
 
-## **Dependencies:
+## **Dependencies:**
 
 Flask: For backend development.
 
@@ -71,7 +71,7 @@ React: For the frontend user interface.
 
 Other necessary libraries: Listed in requirements.txt for the backend.
 
-## **Contributing
+## **Contributing**
 
 We welcome contributions to Mindly! To contribute:
 
@@ -86,7 +86,7 @@ Push to the branch (git push origin feature-name).
 
 Open a pull request.
 
-## **Team
+## **Team**
 
 Tushar Swanskar
 
@@ -95,7 +95,7 @@ Rudra Pratap Tomer
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## **Acknowledgments
+## **Acknowledgments**
 
 DistilRoBERTa for emotion detection.
 
