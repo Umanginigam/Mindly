@@ -98,6 +98,8 @@ Open a pull request.
 
 ## **Team**
 
+Umangi Nigam
+
 Tushar Swanskar
 
 Rudra Pratap Tomer 
