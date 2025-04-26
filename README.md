@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindly-Emotion-Aware Chatbot</title>
+    <title>Emotion-Aware Chatbot</title>
 </head>
 
 <body>
     <header>
-        <h1>🧠 Emotion-Aware Chatbot (Mental Health Support)</h1>
+        <h1>🧠Mindly- Emotion-Aware Chatbot (Mental Health Support)</h1>
         <p>This project is a Flask-based <strong>AI chatbot</strong> that:</p>
         <ul>
             <li><strong>Detects</strong> the emotion from the user's message.</li>
@@ -44,7 +44,7 @@ mental-health-site/
         <h2>⚙️ Installation</h2>
         <ol>
             <li><strong>Clone the Repository</strong>
-                <pre>git clone https://github.com/yourusername/mental-health-chatbot.git
+                <pre>git clone https://github.com/umanginigam/mental-health-chatbot.git
 cd mental-health-site</pre>
             </li>
             <li><strong>Install Requirements</strong>
@@ -121,6 +121,28 @@ cd mental-health-site</pre>
             </tr>
         </table>
     </section>
+    <section>
+    <h2>📸 Website Screenshots</h2>
+    <p>Below are some screenshots of the website interface:</p>
+
+    <!-- Screenshot 1 -->
+    <img width="1470" alt="Screenshot 2025-04-26 at 7 06 23 PM" src="https://github.com/user-attachments/assets/e2908d75-53d0-4410-bfef-7d63dd7905e5" />
+
+
+    <!-- Screenshot 2 -->
+    <img width="1463" alt="Screenshot 2025-04-26 at 7 06 33 PM" src="https://github.com/user-attachments/assets/df1a6605-f77b-4ea1-bb55-7b5954e37060" />
+
+
+    <!-- Screenshot 3 -->
+    <img width="1462" alt="Screenshot 2025-04-26 at 7 06 40 PM" src="https://github.com/user-attachments/assets/da720f8e-069a-4d87-b09e-08f2b37a7bf0" />
+    
+    <img width="1468" alt="Screenshot 2025-04-26 at 7 16 36 PM" src="https://github.com/user-attachments/assets/bf500153-8b53-402c-a3fb-a49bbaf6b6d4" />
+    
+<img width="1460" alt="Screenshot 2025-04-26 at 7 16 55 PM" src="https://github.com/user-attachments/assets/3c3db9fb-8b09-4c16-9914-aeb428cb7fdf" />
+
+
+</section>
+
 
     <section>
         <h2>🛠 Requirements</h2>
