@@ -1,72 +1,164 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!DOCTYPE html>
+<html lang="en">
 
-## Available Scripts
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindly-Emotion-Aware Chatbot</title>
+</head>
 
-In the project directory, you can run:
+<body>
+    <header>
+        <h1>🧠 Emotion-Aware Chatbot (Mental Health Support)</h1>
+        <p>This project is a Flask-based <strong>AI chatbot</strong> that:</p>
+        <ul>
+            <li><strong>Detects</strong> the emotion from the user's message.</li>
+            <li><strong>Generates</strong> a smart, empathetic <strong>response based on the detected emotion</strong>.</li>
+            <li>Combines <strong>emotion classification</strong> and <strong>GPT response generation</strong> for emotionally intelligent conversation.</li>
+        </ul>
+    </header>
 
-### `npm start`
+    <section>
+        <h2>🚀 Features</h2>
+        <ul>
+            <li><strong>Emotion Detection</strong>: Automatically identifies emotions like joy, sadness, anger, fear, surprise, etc.</li>
+            <li><strong>Emotion-Based Response</strong>: Dynamically generates appropriate replies using OpenAI GPT-3.5 based on detected emotions.</li>
+            <li><strong>Fallback Manual Detection</strong>: In case of model failure, basic keyword-based emotion detection is used.</li>
+            <li><strong>Real-Time Interaction</strong>: Chat directly via terminal or connect via API.</li>
+            <li><strong>CORS Enabled</strong>: Easy connection with frontends (e.g., React.js).</li>
+        </ul>
+    </section>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    <section>
+        <h2>📂 Project Structure</h2>
+        <pre>
+mental-health-site/
+├── model.py    # Flask backend server (Emotion detection + Response generation)
+├── build/      # (Optional) Frontend build folder (if any frontend is added)
+└── README.md   # Project documentation
+        </pre>
+    </section>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    <section>
+        <h2>⚙️ Installation</h2>
+        <ol>
+            <li><strong>Clone the Repository</strong>
+                <pre>git clone https://github.com/yourusername/mental-health-chatbot.git
+cd mental-health-site</pre>
+            </li>
+            <li><strong>Install Requirements</strong>
+                <pre>pip install -r requirements.txt</pre>
+            </li>
+            <li><strong>Set Your OpenAI API Key</strong>
+                <p>In <code>model.py</code>:</p>
+                <pre>openai.api_key = "YOUR_OPENAI_API_KEY"</pre>
+            </li>
+            <li><strong>Run the Server</strong>
+                <pre>python3 model.py</pre>
+                <p>(Change port in <code>model.py</code> if needed, e.g., port=5001.)</p>
+            </li>
+        </ol>
+    </section>
 
-### `npm test`
+    <section>
+        <h2>🛠️ How It Works</h2>
+        <p>1. <strong>User sends a message</strong>.</p>
+        <p>2. <strong>Emotion Detection</strong>: Use a Hugging Face model (<code>distilroberta</code>) to detect the underlying emotion.</p>
+        <p>3. <strong>Response Generation</strong>: Based on the detected emotion, generate a suitable, empathetic response using GPT-3.5.</p>
+        <p>4. <strong>Send the response back</strong>.</p>
+    </section>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    <section>
+        <h2>📡 API Usage</h2>
+        <h3>Endpoint: <code>/chat</code></h3>
+        <p><strong>Method</strong>: POST</p>
+        <p><strong>URL</strong>: <code>http://localhost:5000/chat</code></p>
+        <h4>Request Body:</h4>
+        <pre>
+{
+  "message": "I feel anxious about my exams."
+}
+        </pre>
+        <h4>Response Body:</h4>
+        <pre>
+{
+  "response": "It’s completely normal to feel anxious before exams. You've prepared well, and you're going to do great!"
+}
+        </pre>
+    </section>
 
-### `npm run build`
+    <section>
+        <h2>🧩 Models Used</h2>
+        <ul>
+            <li><strong>Emotion Detection</strong>:  
+                <a href="https://huggingface.co/j-hartmann/emotion-english-distilroberta-base">j-hartmann/emotion-english-distilroberta-base</a>
+            </li>
+            <li><strong>Response Generation</strong>:  
+                OpenAI <code>gpt-3.5-turbo</code> (Chat Completion API)
+            </li>
+        </ul>
+    </section>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    <section>
+        <h2>⚠️ Common Issues and Fixes</h2>
+        <table border="1">
+            <tr>
+                <th>Issue</th>
+                <th>Solution</th>
+            </tr>
+            <tr>
+                <td>Address already in use</td>
+                <td>Kill previous process (<code>lsof -i :5000</code>, <code>kill -9 PID</code>) or change port</td>
+            </tr>
+            <tr>
+                <td>return_all_scores warning</td>
+                <td>Use <code>top_k=None</code> in pipeline</td>
+            </tr>
+            <tr>
+                <td>GPU available but not used</td>
+                <td>Set <code>device=0</code> in pipeline</td>
+            </tr>
+        </table>
+    </section>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    <section>
+        <h2>🛠 Requirements</h2>
+        <pre>
+flask
+transformers
+torch
+openai
+flask-cors
+        </pre>
+        <p>(You can generate this by running <code>pip freeze > requirements.txt</code>.)</p>
+    </section>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    <section>
+        <h2>📝 Future Plans</h2>
+        <ul>
+            <li>Add a conversation history / memory to make chats more natural.</li>
+            <li>Customize responses for different severity levels (e.g., mild sadness vs. depression).</li>
+            <li>Support multiple languages for emotion detection and response.</li>
+        </ul>
+    </section>
 
-### `npm run eject`
+    <section>
+        <h2>🤝 Contributing</h2>
+        <p>Contributions, suggestions, and pull requests are welcome!  
+        Feel free to open an issue to discuss changes.</p>
+    </section>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    <section>
+        <h2>📄 License</h2>
+        <p>Licensed under the <a href="LICENSE">MIT License</a>.</p>
+    </section>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    <footer>
+        <p>🎯 Key Takeaway: <strong>This is not just a chatbot. It is an emotionally aware AI system that understands how the user feels and responds accordingly to support mental health.</strong></p>
+    </footer>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</body>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+</html>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Mindly
-# Mindly
