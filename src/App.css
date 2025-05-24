@@ -1,0 +1,342 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #6c63ff; /* Light Purple */
+  --secondary-color: #ffffff; /* White */
+  --background-color: #f4f6f9; /* Light Gray */
+  --text-color: #333333; /* Dark Gray */
+}
+
+/* General Styling */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Button Styling */
+button {
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+
+} 
+
+button:hover {
+  background-color: #564dcc;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color:var(--primary-color);
+  padding: 10px 20px;
+}
+
+.navbar .navbar-brand {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar .nav-link {
+  color: var(--secondary-color);
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+.navbar .nav-link:hover {
+  color:rgba(17, 57, 35, 0.666);
+}
+
+/* Home Page Styles */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: url("/Users/umanginigam/Downloads/Mindly-main/public/4743565.png") no-repeat center center/cover; 
+  color: var(--secondary-color);
+}
+
+.hero-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color:var(--primary-color);
+}
+
+.hero-section button {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+}
+
+/* About Page Styles */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+/* Chatbot Styles */
+.chatbot {
+  padding: 10px;
+  background-color:rgb(41, 71, 120);
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 30px auto;
+  box-shadow: 0px 4px 8px rgba(89, 41, 41, 0.1);
+
+  /* background: url('pages/image.png') no-repeat center;  */
+}
+.chatbot h2{
+  color: antiquewhite;
+}
+
+.chat-window {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 10px;
+  height: 450px;
+  width: 1148px;
+  overflow-y: auto;
+  background-color: var(--background-color);
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.chat-window p{
+  text-align: center;
+  size:20px;
+}
+
+
+.user-message {
+  text-align: right;
+  color: var(--primary-color);
+  margin: 10px 0;
+}
+
+.bot-message {
+  text-align: left;
+  color: var(--text-color);
+  margin: 10px 0;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Resources Styles */
+.resources {
+  padding: 40px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.resources h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resources li {
+  margin: 10px 0;
+}
+
+.resources a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+/* DiagnosisTest */
+.diagnosis-test-container {
+  padding: 5rem;
+  max-height: 800px;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #fdfbfb 0%, #47466a 100%);}
+
+.diagnosis-test-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #6c63ff;
+  margin-bottom: 1rem;
+}
+
+/* Question styling */
+.question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem;
+  color:rgba(72, 37, 198, 0.807);
+}
+
+/* Select dropdown styling */
+.select-dropdown {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #847c96;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.select-dropdown:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+/* Submit button styling */
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #81ecec;
+}
+
+/* Result styling */
+.result {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #187ebd;
+  border-radius: 5px;
+  border: 1px solid #b3e5fc;
+}
+.result p {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .diagnosis-test-container {
+    padding: 1rem;
+  }
+
+  .diagnosis-test-title {
+    font-size: 1.8rem;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+  }
+
+  .result {
+    font-size: 1rem;
+  }
+}
+
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
