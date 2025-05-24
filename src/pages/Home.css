@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-image: url('/Users/umanginigam/Downloads/Mindly-main/public/4743565.png') no-repeat center center/cover; 
+    background-image: url('4743565.png') no-repeat center center/cover; 
     /* color: var(--secondary-color); */
     position: relative;
     overflow: hidden;
