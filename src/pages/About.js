@@ -16,7 +16,7 @@ const About = () => {
           Our platform integrates cutting-edge technologies and a user-friendly interface to make support and guidance readily available at your fingertips.
         </p>
         <p className="about-credit">
-          Website Created by: <strong>Umangi Nigam,Tushar Swanskar,Rudra Pratap Tomer</strong>
+          Website Created by: <strong>Umangi Nigam,Tushar Swanskar</strong>
 
         </p>
       </div>

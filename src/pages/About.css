@@ -4,7 +4,7 @@
     justify-content:center;
     align-items:center;
     min-height: 100vh;
-    background:url("/Users/umanginigam/Downloads/Mindly-main/public/resources.png") no-repeat center center/cover;
+    background:url("pages/resources.png") no-repeat center center/cover;
     padding: 0.1px;
   }
   

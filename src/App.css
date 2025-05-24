@@ -77,7 +77,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background: url("/Users/umanginigam/Downloads/Mindly-main/public/4743565.png") no-repeat center center/cover; 
+  background: url("pages/4743565.png") no-repeat center center/cover; 
   color: var(--secondary-color);
 }
 
